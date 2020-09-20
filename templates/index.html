@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+    <div class="jumbotron" style="padding-top: 8px !important;
+  padding-bottom: 8px !important;">
+        <div class="container" style="align-content: center;text-align: center">
+            <h1 style="align-content: center;text-align: center">
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-music" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 0h5.5v1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h1V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+  <path d="M9.5 3V0L14 4.5h-3A1.5 1.5 0 0 1 9.5 3z"/>
+  <path fill-rule="evenodd" d="M9.757 5.67A1 1 0 0 1 11 6.64v1.75l-2 .5v3.61c0 .495-.301.883-.662 1.123C7.974 13.866 7.499 14 7 14c-.5 0-.974-.134-1.338-.377-.36-.24-.662-.628-.662-1.123s.301-.883.662-1.123C6.026 11.134 6.501 11 7 11c.356 0 .7.068 1 .196V6.89a1 1 0 0 1 .757-.97l1-.25z"/>
+</svg>                AI GALORE SPEECH TO TEXT RECOGNITION
+            </h1>
+            <p style="color: darkslateblue">
+                Uses DeepSpeech and CMU Sphinx to transcribe data
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <p style="color: grey;"><i>Note: Recording through web browser only uses deepspeech model</i></p>
+        <canvas id="analyser" style="width:100%;height:150px;background-color: darkslateblue" width="1024" height="500"></canvas>
+        <p>
+            <button id="start" class="btn btn-success" onclick="startRecording()" disabled>Record</button>
+            <button id="stop" class="btn btn-danger" onclick="stopRecording()" disabled>Stop</button>
+                    </p>
+                <p id="output" name="" style="width: 100%;height: 150px;border-style: solid;
+    border-width: 2px;" readonly>Transcribed Text Will be shown here.</p>
+<p>
+            <form method="POST" action="http://localhost:5002/generate_transcript" enctype="multipart/form-data"  target="sub">
+
+            <input id="file" type="file" name="file">
+        <label>Choose a Model:</label>
+
+<select id="cars" name="method">
+  <option value="deepspeech">DEEPSPEECH</option>
+  <option value="cmu">CMU SPHINX</option>
+</select>
+
+            <input type="submit" class="btn registerbtn btn-success" value="Submit File">
+            </form></p>
+        <p style="color: grey;"><i>Note: Only .wav format is supported</i></p>
+<iframe  name="sub" src="" height=150px; width=100%; value="Transcribed Text Will be shown here.">
+</iframe>
+
+    </div>
+<footer>
+      <div class="container" style="align-content: center;text-align: center">
+        <p>Created By <a href="https://govardhanchitrada.com" rel="author">Govardhan Chitrada</a>. Took 24 working hours to design .</p>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='recorder.js') }}"></script>
+    <script src="{{ url_for('static', filename='audiodisplay.js') }}"></script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+
+{% endblock %}
