@@ -18,4 +18,5 @@ else
     exit 2
 fi
 pip3 install -r requirements.txt
-python3 aigalore_mainfile.py
+#python3 aigalore_mainfile.py
+wsgi --socket 0.0.0.0:5000 --protocol=http --plugin python3 --wsgi-file wsgi.py --callable app

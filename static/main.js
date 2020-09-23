@@ -15,7 +15,6 @@
 
 window.AudioContext = window.AudioContext || window.webkitAudioContext;
 
-var audioContext = new AudioContext();
 var audioInput = null,
     realAudioInput = null,
     inputPoint = null,
@@ -129,6 +128,8 @@ function toggleMono() {
 }
 
 function gotStream(stream) {
+     var audioContext = new AudioContext();
+
     document.getElementById('start').removeAttribute('disabled');
 
     inputPoint = audioContext.createGain();
