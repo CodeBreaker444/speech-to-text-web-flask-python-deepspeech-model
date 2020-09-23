@@ -18,9 +18,9 @@
 
 ## ⚡️Run ###
 ---------------------------------------------------------
-'''
+```
 chmod +x run_me.sh && ./run_me.sh
-'''
+```
 (This script install all the dependencies for this project and runs the flask application)
 Note : This project is tested on python 3.6 on a mac running MAC os Catalina.
 
@@ -28,13 +28,12 @@ Note : This project is tested on python 3.6 on a mac running MAC os Catalina.
 
 ## ⎚Sample Output ###
 ---------------------------------------------------------
-
+```
 your power is sufficient i said
-'''
 Total Recognised Words:6
 Words Per Minute:169.81132075471697
 Total Filler Words:3
-'''
+```
 
 ----------------------------------------------------------
 
