@@ -1,4 +1,4 @@
-## Speech To Text API written in python using flask micro-architecture as backend.
+## Speech To Text🔈 API written in python using flask micro-architecture as backend.
 
 ### 💻Technology Stack ###
 1. Frontend : HTML, BOOTSTRAP, Recorder.js, AudioDisplay.js
