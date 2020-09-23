@@ -23,7 +23,7 @@ Note : This project is tested on python 3.6 on a mac running MAC os Catalina.
 
 --> Manual Run can be done through running aigalore_mainfile.py. No arguments needed.
 
-## ⎚Sample Output ###
+## 📁Sample Output ###
 ```
 your power is sufficient i said
 Total Recognised Words:6
