@@ -11,6 +11,7 @@
 ## ⚒Testing ###
 
 > Included 3 Audio files in Files/Audio/test_audio/
+
 > Transcript is stored in Files/Transcript/output.txt
 
 ## ⚡️Run ###
