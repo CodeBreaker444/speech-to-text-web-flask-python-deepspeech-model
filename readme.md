@@ -10,18 +10,18 @@
 
 ## ⚒Testing ###
 
---> Included 3 Audio files in Files/Audio/test_audio/
-
---> Transcript is stored in Files/Transcript/output.txt
+> Included 3 Audio files in Files/Audio/test_audio/
+> Transcript is stored in Files/Transcript/output.txt
 
 ## ⚡️Run ###
 ```
 chmod +x run_me.sh && ./run_me.sh
 ```
-(This script install all the dependencies for this project and runs the flask application)
+(This script installs all the dependencies for this project and runs the flask application)
+
 Note : This project is tested on python 3.6 on a mac running MAC os Catalina.
 
---> Manual Run can be done through running aigalore_mainfile.py. No arguments needed.
+> Manual Run can be done through running aigalore_mainfile.py. No arguments needed.
 
 ## 📁Sample Output ###
 ```
