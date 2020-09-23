@@ -1,4 +1,6 @@
-## 💻Technology Stack ###
+## Speech To Text API written in python using flask micro-architecture as backend.
+
+### 💻Technology Stack ###
 1. Frontend : HTML, BOOTSTRAP, Recorder.js, AudioDisplay.js
 2. Backend : Flask
 3. Speech Recognition : (Includes Two MODELS : DeepSpeech, CMU Sphinx)
@@ -8,13 +10,13 @@
    /download_transcript: Accepts GET and downlods transcript saved in output.txt
 
 
-## ⚒Testing ###
+### ⚒Testing ###
 
 > Included 3 Audio files in Files/Audio/test_audio/
 
 > Transcript is stored in Files/Transcript/output.txt
 
-## ⚡️Run ###
+### ⚡️Run ###
 ```
 chmod +x run_me.sh && ./run_me.sh
 ```
@@ -24,7 +26,7 @@ Note : This project is tested on python 3.6 on a mac running MAC os Catalina.
 
 > Manual Run can be done through running aigalore_mainfile.py. No arguments needed.
 
-## 📁Sample Output ###
+### 📁Sample Output ###
 ```
 your power is sufficient i said
 Total Recognised Words:6
